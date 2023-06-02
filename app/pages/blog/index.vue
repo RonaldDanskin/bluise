@@ -46,7 +46,7 @@ const Pagination = () => import('@/components/commons/pagination.vue');
 
   head(): MetaInfo {
     return {
-      title: 'Blo',
+      title: 'Blog',
       meta: [
         {
           hid: 'description',
