@@ -1,8 +1,129 @@
 {
   "title": "Apply Now",
   "seoDescription": "About Us",
-  "content": "https://online-application-form.netlify.app/form.html">APPLY NOW"
+  "content": "https://online-application-form.netlify.app/form.html"
 
+{
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier",
+          "fields": ["1", "2", "3", "4", "5"],
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "multiple",
+        ]
+      }
+    ]
+  }
 
+  //checkbox
+  {
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier",
+          "fields": ["1", "2", "3", "4", "5"],
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "checkbox"
+        ]
+      }
+    ]
+  }
+
+  //text - number
+  {
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier",
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "text",
+          "is_mandatory": false,
+          "readOnly": true,
+          "validations": {
+                "message": "This is my message",
+            "length": {"min": 10, "max": 20},
+          }
+        ]
+      }
+    ]
+  }
+
+  //date
+  {
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier",
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "date",
+          "is_mandatory": false,
+        ]
+      }
+    ]
+  }
+
+  //time
+  {
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier_boat",
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "time",
+          "is_mandatory": false,
+        ]
+      }
+    ]
+  }
+
+  //format1
+  {
+    "form": [
+      {
+        "key": "informations",
+        "properties": [
+          "key": "identifier_boat",
+          "fields": ["1", "2", "3", "4", "5"],
+          "title": "This is my title",
+          "description": "This is my description",
+          "type": "format1",
+          "raw": [
+            {
+              "title": "Menu 1",
+              "description": "description 1",
+              "properties": [
+                {
+                  "key": "key_date",
+                  "title": "date",
+                  "type": "date",
+                },
+              ]
+            },
+            {
+              "title": "Menu 2",
+              "properties": [
+                {
+                  "key": "key_trips",
+                  "title": "Trips",
+                  "type": "text",
+                },
+              ]
+            },
+          ]
+        ]
+      }
+    ]
+  }
 
 }
